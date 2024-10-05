@@ -1,0 +1,58 @@
+ {{!--Pagina que muestra en tiempo real el agregado de nuevos shows  --}}
+<div>
+    <h2>Real time Products</h2>
+    <h3>Lista de Shows:</h3>
+</div>
+{{!-- Modelo de la tabla de shows disponibles --}}
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+            <th>Codigo</th>
+            <th>Stock</th>
+            <th>Categoria</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody id="productos-body">
+    </tbody>
+</table>
+<h3>Agregar producto</h3>
+<form id="producto-form">
+    <label for="titulo">Titulo</label>
+    <input type="text" name="titulo" id="titulo" required>
+
+    <label for="descripcion">Descripcion</label>
+    <input type="text" name="descripcion" id="descripcion" required>
+
+    <label for="precio">Precio</label>
+    <input type="text" name="precio" id="precio" required>
+
+    <label for="codigo">Codigo</label>
+    <input type="text" name="codigo" id="codigo" required>
+
+    <label for="stock">Stock</label>
+    <input type="text" name="stock" id="stock" required>
+
+    <label for="categoria">Categoria</label>
+    <input type="text" name="categoria" id="categoria" required>
+
+    <button type="submit">Agregar Producto</button>
+
+{{!-- </form>
+<h3>Quitar producto</h3>
+<form id="delete-form">
+    <label for="id">ID</label>
+    <input type="text" name="id" id="id" required>
+    
+    <button type="submit">Eliminar Producto</button>
+
+</form> --}}
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>

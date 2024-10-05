@@ -1,0 +1,48 @@
+<div>
+    <div class="titulos">
+        <h2>Cartelera de Shows</h2>
+        <h3>Lista de Shows:</h3>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titulo</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+                <th>Codigo</th>
+                <th>Stock</th>
+                <th>Categoria</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each productos}}
+            <tr>
+                <td>{{this._id}}</td>
+                <td>{{this.title}}</td>
+                <td>{{this.description}}</td>
+                <td>{{this.price}}</td>
+                <td>
+                    {{#if this.thumbnail.length}}
+                    <a href="{{this.thumbnail.[0]}}" target="_blank">{{this.thumbnail.[0]}}</a>
+                    {{else}}
+                    Sin Imagen
+                    {{/if}}
+                </td>
+                <td>{{this.code}}</td>
+                <td>{{this.stock}}</td>
+                <td>{{this.category}}</td>
+                <td>
+                    {{#if this.status}}
+                    Disponible
+                    {{else}}
+                    No disponible
+                    {{/if}}
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

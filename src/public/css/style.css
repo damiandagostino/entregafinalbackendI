@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(40, 39, 39);
+}
+
+h2{
+    text-align: center;
+    padding: 15px;
+    color: #d13a3a;
+    font-size: 60px;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #fafafa;
+}
+
+h3{
+    color: #fafafa;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: red;
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 60px;
+}
+
+
+table{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+th, td {
+    border: 1px solid #fafafa;
+    padding: 8px;
+    text-align: left;
+    background-color: rgb(176, 173, 173);
+}
+
+th{
+    background-color: beige;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    background-color: rgb(176, 173, 173);
+}
+
+li{
+    margin-bottom: 10px;
+    background-color: rgb(176, 173, 173);
+}
+
+a{
+    background-color: rgb(176, 173, 173);
+}
+
+form{
+    background-color: rgb(176, 173, 173);
+    padding: 10px;
+    padding-left: 60px;
+}
+
+span{
+    padding: 10px;
+    font-size: 20px;
+    color: #fafafa;
+}
+.pagination a{
+    text-decoration: none;
+    background-color: #d13a3a;
+    color: #fafafa;
+}
+.botones a{
+    margin-left: 10px;
+    text-decoration: none;
+    background-color: #d13a3a;
+    color: #fafafa;
+}
+
+
